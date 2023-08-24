@@ -9,20 +9,11 @@
       "id": 1
     },
     {
+      "id": 2,
       "name": "Mulukhiyah",
-      "price": 200,
       "category": "Beef",
-      "details": "Saute the onions in the 3-4 tablespoons olive oil\r\nAdd the beef cubes or the chicken cutlets, sear for 3-4 min on each side\r\nAdd 1 liter of water or just enough to cover the meat\r\nCook over medium heat until the meat is done (I usually do this in the pressure cooker and press them for 5 min)\r\n\r\nAdd the frozen mulukhyia and stir until it thaws completely and then comes to a boil\r\n\r\nIn another pan add the 1/4 to 1/2 cup of olive oil and the cloves of garlic and cook over medium low heat until you can smell the garlic (don’t brown it, it will become bitter)\r\n\r\nAdd the oil and garlic to the mulukhyia and lower the heat and simmer for 5-10 minutes\r\nAdd salt to taste\r\n\r\nServe with a generous amount of lemon juice.\r\n\r\nYou can serve it with some short grain rice or some pita bread",
-      "image": "https://www.themealdb.com/images/media/meals/x372ug1598733932.jpg",
-      "id": 2
-    },
-    {
-      "name": "Spaghetti Bolognese",
-      "price": 200,
-      "category": "Beef",
-      "details": "Put the onion and oil in a large pan and fry over a fairly high heat for 3-4 mins. Add the garlic and mince and fry until they both brown. Add the mushrooms and herbs, and cook for another couple of mins.\r\n\r\nStir in the tomatoes, beef stock, tomato ketchup or purée, Worcestershire sauce and seasoning. Bring to the boil, then reduce the heat, cover and simmer, stirring occasionally, for 30 mins.\r\n\r\nMeanwhile, cook the spaghetti in a large pan of boiling, salted water, according to packet instructions. Drain well, run hot water through it, put it back in the pan and add a dash of olive oil, if you like, then stir in the meat sauce. Serve in hot bowls and hand round Parmesan cheese, for sprinkling on top.",
-      "image": "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg",
-      "id": 4
+      "price": 100,
+      "image": "https://www.themealdb.com/images/media/meals/x372ug1598733932.jpg"
     },
     {
       "name": "Brie wrapped in prosciutto & brioche",
@@ -49,12 +40,11 @@
       "id": 7
     },
     {
+      "id": 8,
       "name": "Banana Pancakes",
-      "price": 200,
       "category": "Dessert",
-      "details": "In a bowl, mash the banana with a fork until it resembles a thick purée. Stir in the eggs, baking powder and vanilla.\r\nHeat a large non-stick frying pan or pancake pan over a medium heat and brush with half the oil. Using half the batter, spoon two pancakes into the pan, cook for 1-2 mins each side, then tip onto a plate. Repeat the process with the remaining oil and batter. Top the pancakes with the pecans and raspberries.",
-      "image": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg",
-      "id": 8
+      "price": 200,
+      "image": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg"
     },
     {
       "name": "Baked salmon with fennel & tomatoes",

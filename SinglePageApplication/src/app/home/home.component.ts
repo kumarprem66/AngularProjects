@@ -10,11 +10,18 @@ import { Meal, Meals } from '../data-type';
 export class HomeComponent implements OnInit{
 
   menusItem: Meals[] | undefined
+  updatedish : any | undefined
+
+  showEditPopup = false;
+  selectedItem: any = {}; // Placeholder for the selected item being edited
+
+
+
   constructor(private http:HttpClient){}
 
   ngOnInit(): void {
 
-    this.getMealDate();
+    this.getMealData();
    
   }
 
@@ -43,18 +50,64 @@ export class HomeComponent implements OnInit{
 
 
   deleteDish(id:number){
-     this.http.delete(`http://localhost:3000/products/${id}`).subscribe((res)=>{
+    const confirmDelete = confirm("Are you sure want to delete this dish?")
+    if (confirmDelete){
+      this.http.delete(`http://localhost:3000/products/${id}`).subscribe((res)=>{
       
-      this.getMealDate()
+      this.getMealData()
      })
+    }
+   
   }
 
-  getMealDate():void{
+  getMealData():void{
     this.http.get<Meals[]>('http://localhost:3000/products?_page=1&_limit=20').subscribe((result)=>{
 
     this.menusItem = result
 
 
   }) 
+  }
+
+  showEditPopupFun(id:number):void{
+  
+    this.showEditPopup = true;
+    this.http.get<any>(`http://localhost:3000/products/${id}`).subscribe((res)=>{
+      
+    this.selectedItem = res;
+   
+  })
+  }
+
+  updateDish(data:any){
+
+    const confirmDelete = confirm("Are you sure want to update this dish?")
+    if (confirmDelete){
+      this.http.put(`http://localhost:3000/products/${data.id}`,data).subscribe((res)=>{
+      
+      alert("dish updated sucessfully")
+      this.getMealData()
+        
+      })
+    }
+   
+    this.showEditPopup = false;
+  
+  }
+
+
+  // openEditPopup(item: any): void {
+  //   this.selectedItem = { ...item };
+  //   this.showEditPopup = true;
+  // }
+
+  saveChanges(): void {
+    // Logic to save changes to the selected item
+    // You can update your menusItem array with the edited data
+    this.showEditPopup = false;
+  }
+
+  closeEditPopup(): void {
+    this.showEditPopup = false;
   }
 }
