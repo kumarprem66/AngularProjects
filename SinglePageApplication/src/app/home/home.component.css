@@ -1,0 +1,16 @@
+.div_container{
+    padding: 20px;
+
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: auto;
+   justify-content: space-between;
+
+}
+
+.div_container .mycard{
+    margin-bottom: 20px;
+  
+    height: auto
+}
